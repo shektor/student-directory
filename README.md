@@ -11,16 +11,16 @@ ruby directory.rb
 ### Task list ###
 
 - [x] Setting up the environment
-- [] Printing the list of students
-- [] Refactoring
-- [] Arrays
-- [] Methods
-- [] Adding more information
-- [] Asking for user input
-- [] Exercises
-- [] Adding an interactive menu
-- [] More refactoring
-- [] Saving the data to a file
-- [] Loading the data from the file
-- [] Taking arguments from the command line
-- [] More exercises
+- [ ] Printing the list of students
+- [ ] Refactoring
+- [ ] Arrays
+- [ ] Methods
+- [ ] Adding more information
+- [ ] Asking for user input
+- [ ] Exercises
+- [ ] Adding an interactive menu
+- [ ] More refactoring
+- [ ] Saving the data to a file
+- [ ] Loading the data from the file
+- [ ] Taking arguments from the command line
+- [ ] More exercises
