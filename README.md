@@ -12,7 +12,7 @@ ruby directory.rb
 
 - [x] Setting up the environment
 - [x] Printing the list of students
-- [ ] Refactoring
+- [x] Refactoring
 - [ ] Arrays
 - [ ] Methods
 - [ ] Adding more information
