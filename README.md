@@ -14,7 +14,7 @@ ruby directory.rb
 - [x] Printing the list of students
 - [x] Refactoring
 - [x] Arrays
-- [ ] Methods
+- [x] Methods
 - [ ] Adding more information
 - [ ] Asking for user input
 - [ ] Exercises
