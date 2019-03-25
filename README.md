@@ -11,7 +11,7 @@ ruby directory.rb
 ### Task list ###
 
 - [x] Setting up the environment
-- [ ] Printing the list of students
+- [x] Printing the list of students
 - [ ] Refactoring
 - [ ] Arrays
 - [ ] Methods
