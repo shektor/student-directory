@@ -13,7 +13,7 @@ ruby directory.rb
 - [x] Setting up the environment
 - [x] Printing the list of students
 - [x] Refactoring
-- [ ] Arrays
+- [x] Arrays
 - [ ] Methods
 - [ ] Adding more information
 - [ ] Asking for user input
