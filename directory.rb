@@ -13,15 +13,21 @@ students = [
   "Norman Bates"
 ]
 
-# print list of students
-puts "The students of Villains Academy"
-puts "-------------"
-
-# iterate over students array
-students.each do |student|
-  puts student
+def print_header
+  puts "The students of Villains Academy"
+  puts "-------------"
 end
 
-# print number of students
-# print() does not automatically add new line characters to end of arguement
-puts "Overall, we have #{students.count} great students"
+def print(array)
+  array.each do |item|
+    puts item
+  end
+end
+
+def print_footer(array)
+  puts "Overall, we have #{array.count} great students"
+end
+
+print_header
+print(students)
+print_footer(students)
