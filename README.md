@@ -16,7 +16,7 @@ ruby directory.rb
 - [x] Arrays
 - [x] Methods
 - [x] Adding more information
-- [ ] Asking for user input
+- [x] Asking for user input
 - [ ] Exercises
 - [ ] Adding an interactive menu
 - [ ] More refactoring
