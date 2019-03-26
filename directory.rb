@@ -59,8 +59,12 @@ def input_students
   
 end
 
-# students = input_students
+students = input_students
 print_header
 # print(students)
-print_with_index(students)
-print_footer(students)
+if students.count > 0
+  print_with_index(students)
+  print_footer(students)
+else
+  puts "The directory is empty"
+end
