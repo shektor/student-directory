@@ -24,6 +24,12 @@ def print(array)
   end
 end
 
+def print_with_index(array)
+  array.each_with_index do |hash, index|
+    puts "#{index + 1}. #{hash[:name]} (#{hash[:cohort]} cohort)"
+  end
+end
+
 def print_footer(array)
   puts "Overall, we have #{array.count} great students"
 end
@@ -53,7 +59,8 @@ def input_students
   
 end
 
-students = input_students
+# students = input_students
 print_header
-print(students)
+# print(students)
+print_with_index(students)
 print_footer(students)
