@@ -1,4 +1,3 @@
-# student array
 students = [
   {name: "Dr. Hannibal Lecter", cohort: :november},
   {name: "Darth Vader", cohort: :november},
@@ -28,30 +27,36 @@ def print_with_index(array)
   array.each_with_index do |hash, index|
     puts "#{index + 1}. #{hash[:name]} (#{hash[:cohort]} cohort)"
   end
+  puts ""
 end
 
 def print_footer(array)
-  puts "Overall, we have #{array.count} great students"
+  puts msg_end_plural("Overall, we have #{array.count} great student", array.count)
+end
+
+def msg_end_plural(string, count)
+  # concatenate an 's' to end of string if count is greater than 1
+  count > 1 ? (string) : (string + "s")
 end
 
 def input_students
-  # create empty array
+
   students = []
   
-  # request first name
   puts "Enter a student name and hit enter"
   puts "Names can be added until you hit enter on a blank line"
   name = gets.chomp
   
-  # while name not empty repeat following block
   while !name.empty? do
     
-    # add student hash to the students array
     students << {name: name, cohort: :november}
-    puts "Now we have #{students.count} students"
     
-    # get another name from the user
+    puts msg_end_plural("Now we have #{students.count} student", students.count)
+
     name = gets.chomp
+    
+    # chomp can be replaced with the delete method if correct arguements are passed
+    # name = gets.delete("\r\n")
   end
   
   # return user
@@ -60,9 +65,9 @@ def input_students
 end
 
 students = input_students
-print_header
 # print(students)
 if students.count > 0
+  print_header
   print_with_index(students)
   print_footer(students)
 else
