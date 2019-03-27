@@ -40,9 +40,9 @@ def msg_end_plural(string, count)
 end
 
 def input_students
-
-  students = []
   
+  students = []
+
   puts "Enter a student name and hit enter"
   puts "Names can be added until you hit enter on a blank line"
   name = gets.chomp
@@ -64,12 +64,42 @@ def input_students
   
 end
 
-students = input_students
-# print(students)
-if students.count > 0
-  print_header
-  print_with_index(students)
-  print_footer(students)
-else
-  puts "The directory is empty"
+def interactive_menu
+  
+  students = []
+  
+  loop do
+  
+    # 1. print the menu and ask the user what to do
+    puts "1. Input the students"
+    puts "2. Show the students"
+    puts "9. Exit"
+    
+    # 2. read the input and save it into a variable
+    selection = gets.chomp
+    
+    # 3. do what the user has asked
+    case selection
+      when "1"
+        students = input_students
+      when "2"
+        if students.count > 0
+          print_header
+          print_with_index(students)
+          print_footer(students)
+        else
+          puts "The directory is empty"
+        end
+      when "9"
+        exit
+      else
+        puts "Invalid Input, please try again"
+    end
+  
+  # 4. repeat from step 1
+  end
 end
+
+
+interactive_menu
+
