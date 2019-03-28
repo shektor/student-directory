@@ -17,21 +17,21 @@ def print_header
   puts "-------------"
 end
 
-def print_students_list(array)
-  array.each do |hash|
+def print_students_list
+  @students.each do |hash|
     puts "#{hash[:name]} (#{hash[:cohort]} cohort)"
   end
 end
 
-def print_with_index(array)
-  array.each_with_index do |hash, index|
+def print_with_index
+  @students.each_with_index do |hash, index|
     puts "#{index + 1}. #{hash[:name]} (#{hash[:cohort]} cohort)"
   end
   puts ""
 end
 
-def print_footer(array)
-  puts msg_end_plural("Overall, we have #{array.count} great student", array.count)
+def print_footer
+  puts msg_end_plural("Overall, we have #{@students.count} great student", @students.count)
 end
 
 def msg_end_plural(string, count)
@@ -67,8 +67,8 @@ end
 
 def show_students
   print_header
-  print_students_list(@students)
-  print_footer(@students)
+  print_students_list
+  print_footer
 end
 
 def process(selection)
