@@ -17,7 +17,7 @@ def print_header
   puts "-------------"
 end
 
-def print(array)
+def print_students_list(array)
   array.each do |hash|
     puts "#{hash[:name]} (#{hash[:cohort]} cohort)"
   end
@@ -66,9 +66,9 @@ def print_menu
 end
 
 def show_students
-  print header
-  print(students)
-  print_footer(students)
+  print_header
+  print_students_list(@students)
+  print_footer(@students)
 end
 
 def process(selection)
