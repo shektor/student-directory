@@ -77,9 +77,7 @@ def process(selection)
       input_students
     when "2"
       if @students.count > 0
-        print_header
-        print_with_index(@students)
-        print_footer(@students)
+        show_students
       else
         puts "The directory is empty"
       end
