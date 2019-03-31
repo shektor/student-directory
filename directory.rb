@@ -44,7 +44,7 @@ def input_students
 
   puts "Enter a student name and hit enter"
   puts "Names can be added until you hit enter on a blank line"
-  name = gets.chomp
+  name = STDIN.gets.chomp
   
   while !name.empty? do
     
@@ -52,7 +52,7 @@ def input_students
     
     puts msg_end_plural("Now we have #{@students.count} student", @students.count)
 
-    name = gets.chomp
+    name = STDIN.gets.chomp
     
     # chomp can be replaced with the delete method if correct arguements are passed
     # name = gets.delete("\r\n")
@@ -133,10 +133,11 @@ end
 def interactive_menu
   loop do
     print_menu
-    process(gets.chomp)
+    process(STDIN.gets.chomp)
   end
 end
 
 @students = []
+try_load_students
 interactive_menu
 
