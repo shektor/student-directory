@@ -75,6 +75,7 @@ end
 def print_menu
   puts "1. Input the students"
   puts "2. Show the students"
+  puts "3. Save list to students.csv"
   puts "9. Exit"
 end
 
@@ -94,6 +95,9 @@ def process(selection)
       else
         puts "The directory is empty"
       end
+    when "3"
+      save_students
+      "Students have been saved to students.csv"
     when "9"
       exit
     else
