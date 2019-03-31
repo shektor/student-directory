@@ -97,7 +97,7 @@ def process(selection)
       end
     when "3"
       save_students
-      "Students have been saved to students.csv"
+      puts "Students have been saved to students.csv"
     when "9"
       exit
     else
